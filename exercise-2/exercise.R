@@ -30,3 +30,26 @@
 
 ## bonus:
 ## how to make write this exercise in a function??
+
+chanceOfRain = function(I_saw_raindrops, my_shoes_are_wet, my_ta_is_soaked, I_love_cookies)
+{
+  chance_of_rain = 0
+  
+  if(I_saw_raindrops)
+  {
+    chance_of_rain = 100
+  } else if(my_shoes_are_wet)
+  {
+    chance_of_rain = chance_of_rain + 40
+  } else if(my_ta_is_soaked)
+  {
+    chance_of_rain = chance_of_rain + 50
+  }
+  
+  if(!I_love_cookies)
+  {
+    cat("I do not like chocolate.\n")
+  }
+  
+  cat("The chance of rain in Seattle is", chance_of_rain, "percent")
+}
